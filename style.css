@@ -30,6 +30,9 @@ body {
 ul {
     padding: 0;
     list-style-type: none;
+}
+
+#header ul {
     margin-top: 0;
     display: flex;
     flex-direction: row;
@@ -128,6 +131,93 @@ h3 {
     width: 100%;
 }
 
+#faq {
+    background-color: #000101;
+    padding: 3vw 10vw;
+}
+
+#faq-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.faq-style {
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 1.625rem;
+    padding: 1vw 2vw;
+    text-align: left;
+}
+
+.accordion {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 1%;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #202020;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+    margin-bottom: 1%;
+}
+
+.accordion:after {
+    float: right;
+    content: '\002B';
+}
+
+.active:after {
+    content: "\2715";
+}
+
+#footer {
+    background-color: #000101;
+    color: #757575;
+    padding: 5vw 15vw;
+}
+
+p {
+    margin: 0;
+}
+
+#footer-links {
+    display: flex;
+    align-items: stretch;
+    margin-top: 15px;
+}
+
+.footer-col {
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.footer-col li {
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: inherit;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+#netflix-ph {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
 @media (max-width: 450px) {
     h1 {
         font-size: 2rem;
@@ -149,5 +239,9 @@ h3 {
 
     #download {
         flex-direction: column-reverse;
+    }
+
+    .faq-style {
+        font-size: 1.2rem;
     }
 }

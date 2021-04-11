@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     <body>
-        <div class="white-text" id="header">
+        <div class="white-text add-divider" id="header">
             <nav id="header-nav">
                 <ul>
                     <li><a href=""><img src="img/netflix-logo.png" alt="Netflix Logo" id="netflix-logo"></a></li>
@@ -20,15 +20,17 @@
             <div class="center-text" id="header-text">
                 <h1>Unlimited movies, TV shows, and more.</h1>
                 <h2>Watch anywhere. Cancel anytime.</h2>
-                <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
-                <div id="email-form">
+                <div id="ready-to-watch">
+                    <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+                    <div id="email-form">
                     <input type="email" id="email" name="email" placeholder="Email address">
                     <button type="submit" class="red-btn white-text" id="get-started-btn">Get Started</button>
                 </div>
+                </div>
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="features">
+        <!-- <div class="divider"></div> -->
+        <div class="features add-divider">
             <div class="features-text white-text same-width">
                 <h1>Enjoy on your TV.</h1>
                 <h2>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h2>
@@ -37,8 +39,8 @@
                 <img src="img/tv.png" alt="tv" id="tv-img">
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="features" id="download">
+        <!-- <div class="divider"></div> -->
+        <div class="features add-divider" id="download">
             <div class="features-img same-width">
                 <img src="img/mobile-stranger-things.jpg" alt="mobile" id="tv-img">
             </div>
@@ -47,8 +49,8 @@
                 <h2>Save your favorites easily and always have something to watch.</h2>
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="features">
+        <!-- <div class="divider"></div> -->
+        <div class="features add-divider">
             <div class="features-text white-text same-width">
                 <h1>Watch everywhere.</h1>
                 <h2>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</h2>
@@ -57,10 +59,73 @@
                 <img src="img/device-pile.png" alt="tv" id="tv-img">
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="features white-text" id="faq">
-            <h1>Frequently Asked Questions</h1>
+        <!-- <div class="divider"></div> -->
+        <div class="white-text add-divider" id="faq">
+            <h1 class="center-text">Frequently Asked Questions</h1>
+            <div id="faq-info">
+                <button class="accordion faq-style">What is Netflix?</button>
+                <div class="panel faq-style">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                    <br>
+                    You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                </div>
+                <button class="accordion faq-style">How much does Netflix cost?</button>
+                <div class="panel faq-style">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₱149 to ₱549 a month. No extra costs, no contracts.</p>
+                </div>
+                <button class="accordion faq-style">Where can I watch?</button>
+                <div class="panel faq-style">
+                    <p>Watch anywhere, anytime, on an unlimited number of devices. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                </div>
+                <button class="accordion faq-style">How do I cancel?</button>
+                <div class="panel faq-style">
+                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                </div>
+                <button class="accordion faq-style">What can I watch on Netflix?</button>
+                <div class="panel faq-style">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
         </div>
-        <script src="" async defer></script>
+        <div id="footer">
+            <p>Questions? Contact us.</p>
+            <div id="footer-links">
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Ways to Watch</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                        <li><a href="">Netflix Originals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Redeem Gift Cards</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Speed Test</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <ul>
+                        <li><a href="">Media Center</a></li>
+                        <li><a href="">Buy Gift Cards</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Legal Notices</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p id="netflix-ph">Netflix Philippines</p>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
