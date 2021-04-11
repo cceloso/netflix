@@ -6,8 +6,6 @@ Responsive Netflix landing page clone created with HTML, CSS and JS.
 
 ## Description
 
----
-
 - Applied responsive web design principles
 - Deepened knowledge about CSS Flexbox
 - Learned more about DOM manipulation
