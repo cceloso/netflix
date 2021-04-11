@@ -3,10 +3,9 @@ const acc = document.getElementsByClassName("accordion");
 const panel = document.getElementsByClassName("panel");
 const faq = document.getElementById("faq");
 const readyToWatch = document.getElementById("ready-to-watch");
-let i;
 
 // Add divider
-for(i = 0; i < addDivider.length; i++) {
+for(let i = 0; i < addDivider.length; i++) {
     console.log("Will add divider!");
     let divider = document.createElement("div");
     divider.classList.add("divider");
@@ -14,9 +13,9 @@ for(i = 0; i < addDivider.length; i++) {
 }
 
 // FAQ button handling
-for(i = 0; i < acc.length; i++) {
+for(let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", () => {
-        // console.log(`FAQ #${i} was clicked!`);
+        console.log(`FAQ #${i} was clicked!`);
         acc[i].classList.toggle("active");
 
         if(panel[i].style.display === "block") {
