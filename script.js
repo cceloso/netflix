@@ -21,14 +21,18 @@ for(let i = 0; i < acc.length; i++) {
         if(panel[i].style.display === "block") {
             panel[i].style.display = "none";
         } else {
-            for(let j = 0; j < panel.length; j++) {
-                if(i == j) {
-                    panel[j].style.display = "block";
-                } else {
-                    panel[j].style.display = "none";
-                }
-            }
+            panel[i].style.display = "block";
         }
+        
+        // else {
+        //     for(let j = 0; j < panel.length; j++) {
+        //         if(i == j) {
+        //             panel[j].style.display = "block";
+        //         } else {
+        //             panel[j].style.display = "none";
+        //         }
+        //     }
+        // }
     });
 }
 
