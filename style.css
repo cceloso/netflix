@@ -207,6 +207,7 @@ p {
     color: inherit;
     font-size: 13px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .footer-col a:hover {
@@ -218,7 +219,10 @@ p {
     font-size: 13px;
 }
 
-@media (max-width: 450px) {
+
+/* Tablets and mobile devices */
+/* @media (max-width: 480px) { */
+@media (max-width: 768px) {
     h1 {
         font-size: 2rem;
     }
